@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nexus Builds makes hand assembled custom gaming and workstation PCs. Pick a prebuilt rig or configure your own.">
   <title>Nexus Builds - Custom PCs</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,12 +13,12 @@
     <nav class="navbar">
       <a href="#" class="logo">NEXUS<span>BUILDS</span></a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#builds">Builds</a></li>
-        <li><a href="#configurator">Configure</a></li>
-        <li><a href="#why-us">Why Us</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#builds" data-section="builds">Builds</a></li>
+        <li><a href="#configurator" data-section="configurator">Configure</a></li>
+        <li><a href="#why-us" data-section="why-us">Why Us</a></li>
+        <li><a href="#contact" data-section="contact">Contact</a></li>
       </ul>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">&#9776;</button>
     </nav>
   </header>
 
@@ -39,7 +41,7 @@
     </div>
   </section>
 
-  <section class="builds" id="builds">
+  <section class="builds reveal" id="builds">
     <h2>Prebuilt Rigs</h2>
     <p class="section-sub">Ready to ship in 3-5 business days</p>
     <div class="build-cards">
@@ -80,7 +82,7 @@
     </div>
   </section>
 
-  <section class="configurator" id="configurator">
+  <section class="configurator reveal" id="configurator">
     <h2>Build Your Own</h2>
     <p class="section-sub">Pick your parts and see the price update live</p>
     <div class="configurator-box">
@@ -127,7 +129,7 @@
     </div>
   </section>
 
-  <section class="why-us" id="why-us">
+  <section class="why-us reveal" id="why-us">
     <h2>Why Nexus Builds</h2>
     <div class="feature-grid">
       <div class="feature">
@@ -153,7 +155,7 @@
     </div>
   </section>
 
-  <section class="cta-banner" id="contact">
+  <section class="cta-banner reveal" id="contact">
     <h2>Ready to build something fast?</h2>
     <p>Tell us what you need it for and we'll recommend a build and a price.</p>
     <a href="mailto:hello@nexusbuilds.example" class="btn btn-primary btn-large">Get a Quote</a>

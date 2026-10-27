@@ -15,11 +15,38 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 
 a {
@@ -40,6 +67,7 @@ section {
   padding: 80px 24px;
   max-width: 1100px;
   margin: 0 auto;
+  scroll-margin-top: 70px;
 }
 
 section h2 {
@@ -95,8 +123,13 @@ section h2 {
   transition: color 0.2s;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
   color: var(--text);
+}
+
+.nav-links a.active {
+  color: var(--accent-bright);
 }
 
 .menu-toggle {
