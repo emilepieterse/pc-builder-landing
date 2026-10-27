@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus Builds - Custom PCs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#" class="logo">NEXUS<span>BUILDS</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#builds">Builds</a></li>
+        <li><a href="#configurator">Configure</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Custom PCs, Built For What You Actually Do</h1>
+      <p>Gaming, editing, or rendering, we hand build every rig to order and stress test it before it ships.</p>
+      <div class="hero-buttons">
+        <a href="#configurator" class="btn btn-primary">Build Your PC</a>
+        <a href="#builds" class="btn btn-secondary">See Prebuilt Rigs</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="pc-tower">
+        <div class="tower-glow"></div>
+        <div class="tower-line"></div>
+        <div class="tower-line"></div>
+        <div class="tower-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="builds" id="builds">
+    <h2>Prebuilt Rigs</h2>
+    <p class="section-sub">Ready to ship in 3-5 business days</p>
+    <div class="build-cards">
+      <div class="build-card">
+        <h3>Starter</h3>
+        <p class="price">$999</p>
+        <ul>
+          <li>Ryzen 5 7600</li>
+          <li>RTX 4060</li>
+          <li>16GB DDR5</li>
+          <li>1TB NVMe SSD</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline">Order This Build</a>
+      </div>
+      <div class="build-card featured">
+        <span class="badge">Most Popular</span>
+        <h3>Performance</h3>
+        <p class="price">$1,649</p>
+        <ul>
+          <li>Ryzen 7 7800X3D</li>
+          <li>RTX 4070 Ti</li>
+          <li>32GB DDR5</li>
+          <li>2TB NVMe SSD</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Order This Build</a>
+      </div>
+      <div class="build-card">
+        <h3>Elite</h3>
+        <p class="price">$2,899</p>
+        <ul>
+          <li>Ryzen 9 7950X3D</li>
+          <li>RTX 4090</li>
+          <li>64GB DDR5</li>
+          <li>4TB NVMe SSD</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline">Order This Build</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="configurator" id="configurator">
+    <h2>Build Your Own</h2>
+    <p class="section-sub">Pick your parts and see the price update live</p>
+    <div class="configurator-box">
+      <div class="config-options">
+        <div class="config-row">
+          <label for="cpu">Processor</label>
+          <select id="cpu">
+            <option value="450">Ryzen 5 7600</option>
+            <option value="650">Ryzen 7 7800X3D</option>
+            <option value="1100">Ryzen 9 7950X3D</option>
+          </select>
+        </div>
+        <div class="config-row">
+          <label for="gpu">Graphics Card</label>
+          <select id="gpu">
+            <option value="300">RTX 4060</option>
+            <option value="800">RTX 4070 Ti</option>
+            <option value="1600">RTX 4090</option>
+          </select>
+        </div>
+        <div class="config-row">
+          <label for="ram">Memory</label>
+          <select id="ram">
+            <option value="60">16GB DDR5</option>
+            <option value="120">32GB DDR5</option>
+            <option value="240">64GB DDR5</option>
+          </select>
+        </div>
+        <div class="config-row">
+          <label for="storage">Storage</label>
+          <select id="storage">
+            <option value="70">1TB NVMe SSD</option>
+            <option value="140">2TB NVMe SSD</option>
+            <option value="280">4TB NVMe SSD</option>
+          </select>
+        </div>
+      </div>
+      <div class="config-summary">
+        <span class="summary-label">Estimated Total</span>
+        <span class="summary-price" id="totalPrice">$1,100</span>
+        <p class="summary-note">Base price includes case, PSU, motherboard, and assembly</p>
+        <a href="#contact" class="btn btn-primary">Request This Build</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-us" id="why-us">
+    <h2>Why Nexus Builds</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="feature-icon">&#9889;</div>
+        <h3>Hand Assembled</h3>
+        <p>Every PC is built, cabled, and stress tested by one technician from start to finish.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">&#128737;</div>
+        <h3>3-Year Warranty</h3>
+        <p>Parts and labor covered for three years, with free diagnostics for the life of the build.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">&#128230;</div>
+        <h3>Fast Turnaround</h3>
+        <p>Most builds ship within 3-5 business days of order confirmation.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">&#128172;</div>
+        <h3>Real Support</h3>
+        <p>Talk to the person who built your PC, not a call center script.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner" id="contact">
+    <h2>Ready to build something fast?</h2>
+    <p>Tell us what you need it for and we'll recommend a build and a price.</p>
+    <a href="mailto:hello@nexusbuilds.example" class="btn btn-primary btn-large">Get a Quote</a>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Nexus Builds. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
