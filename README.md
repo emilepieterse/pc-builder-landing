@@ -7,6 +7,8 @@ A responsive landing page for a fictional custom PC building business, built wit
 - Prebuilt rig pricing cards
 - Interactive build configurator: pick a CPU, GPU, RAM, and storage tier and the total price updates live
 - Mobile nav menu with a hamburger toggle
+- Nav link highlights the section currently in view while scrolling
+- Sections fade in as you scroll to them
 - Responsive layout down to phone width
 
 ## How to run
