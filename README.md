@@ -2,6 +2,8 @@
 
 A responsive landing page for a fictional custom PC building business, built with plain HTML, CSS, and JavaScript.
 
+Live demo: https://emilepieterse.github.io/pc-builder-landing/
+
 ## Features
 
 - Prebuilt rig pricing cards
